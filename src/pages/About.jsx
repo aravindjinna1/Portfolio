@@ -4,12 +4,12 @@
  export default function About(){
 
       return(
-          <div>
-         <section className="max-w-[1010px] mx-auto px-6 text-justify text-gray-100">
-        <h1 className="text-5xl py-10 pl-2">
-          About<span className="text-sky-400"> Me</span>
+          <div className="sm:max-w-[1050px] mx-auto md:mx-20 px-4 text-justify text-white-100 ">
+         <section >
+        <h1 className="text-5xl font-bold text-white py-10 pl-2">
+          About<span className="text-sky-400 text-5xl font-bold"> Me</span>
         </h1>
-        <p className="text-lg font-light leading-relaxed mb-24">
+        <p className="text:[5px]   text-justify  font-light leading-relaxed  sm:max-w-4xl sm:text-lg">
           Hi, I’m Aravind Jinna, a 19-year-old Computer Science student pursuing a Bachelor of Computer Applications (BCA)
           at Chaitanya (Deemed to be University), Hyderabad. I'm a Front-End Developer skilled in HTML, CSS, Tailwindcss,
           JavaScript, and React.js, with additional knowledge in C, C++, and Python. I love building visually appealing,

@@ -10,7 +10,7 @@ import "aos/dist/aos.css";
 const Navbar = forwardRef(
   ({ HomeRef, AboutRef, SkillsRef, ProjectsRef, ContactRef }, ref) => {
     useEffect(() => {
-      AOS.init = { duration: 0.8 };
+        AOS.init({ duration: 800 }); // ✅ correct
     });
 
     const [isOpen, setIsOpen] = useState(false);

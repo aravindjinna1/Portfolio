@@ -41,13 +41,13 @@ function Skills() {
       mirror: false,
       offset: 120,
       anchorPlacement: "top-bottom",
-    });
+    })
 
-    setTimeout(() => AOS.refresh(), 100);
+    // setTimeout(() => AOS.refresh(), 100);
 
-    return () => {
-      AOS.refreshHard();
-    };
+    // return () => {
+    //   AOS.refreshHard();
+    // };
   }, []);
 
   return (
@@ -136,7 +136,7 @@ function Skills() {
             </div>
 
             {/* Optional border effect background layer */}
-            <div className="absolute inset-0 z-0 animate-pulse border-4 border-gradient-to-tr from-pink-500 via-blue-500 to-purple-500 rounded-[20px] opacity-30 "></div>
+            <div className="absolute inset-0 z-40 animate-pulse border-4 border-gradient-to-tr from-pink-500 via-blue-500 to-purple-500 rounded-[20px] opacity-30 "></div>
           </div>
 
           <div
@@ -168,11 +168,11 @@ function Skills() {
             // data-aos-once="false"
             className="relative border-animate fade-left   animate-fade-up-blur delay-2 flex flex-col justify-center items-center overflow-hidden text-white sm:w-[280px] sm:h-[280px] rounded-[20px] bg-black p-4  "
           >
-            <h1 className="text-white text-[20px]  mb-4 z-10 relative z-30">
+            <h1 className="text-white text-[20px]  mb-4  relative z-30">
               Back-end Tools
             </h1>
             {/* text-white text-[20px] sm:text-blue-500 sm:text-[25px] mb-4 z-10 */}
-            <div className="grid grid-cols-3 gap-4 place-items-center w-full mb-2 relative z-30">
+            <div className="grid grid-cols-3 gap-4 place-items-center w-full mb-2 relative z-40">
               <Icon
                 icon="skill-icons:nodejs-light"
                 width="60"
@@ -223,11 +223,11 @@ function Skills() {
             //  data-aos-once="false"
             className="relative border-animate fade-left  delay-3 animate-fade-up-blur flex flex-col justify-center items-center overflow-hidden text-white sm:w-[280px] sm:h-[280px] rounded-[20px] bg-black p-4"
           >
-            <h1 className="text-white text-[20px]  mb-4 relative z-30">
+            <h1 className="text-white text-[20px]  mb-4 relative z-40">
               {" "}
               Other & Tools Technologies
             </h1>
-            <div className="grid grid-cols-3 gap-4 place-items-center w-full mb-2 relative z-30">
+            <div className="grid grid-cols-3 gap-4 place-items-center w-full mb-2 relative z-0">
               <Icon
                 icon="ri:github-fill"
                 width="60"

@@ -48,7 +48,7 @@ export default function Portfolio() {
       {/* Page 1 */}
       <section className="Page1 relative z-30">
         {/* Header */}
-        <header className=" fixed top-0 w-full h-20 flex gap-10 md:20  shadow-[0px_0px_5px_0px_#000009ff] z-50 flex justify-between items-center px-10 py-6 sm:mb-[40px]">
+        <header className=" fixed top-0 w-full h-20 flex gap-10 md:20  shadow-[0px_0px_5px_0px_#000009ff] z-40 flex justify-between items-center px-10 py-6 sm:mb-[40px]">
           <h1 className=" flex justify-center animate-wiggle backdrop-blur-[20px] shadow-[0_10px_20px_rgba(0,0,0,0.3)] bg-[rgba(225,225,225,0.1)] w-[300px] h-[50px] rounded-[10px] text-5xl  relative left-[10%] md:left-10 top-0 sm:mt-0   ">
             Port<span className="text-sky-400">folio</span>
           </h1>
@@ -100,9 +100,9 @@ export default function Portfolio() {
               </h1>
               <p className="text-lg mx-1 md:mx-0  relative z-30">
                 And I'm a{" "}
-                <span className="text-[#f907cd] mx-4 md:mx-0">
+                <strong className="text-[#ff00d0] mx-4 md:mx-0">
                   Front-End Developer
-                </span>
+                </strong>
               </p>
 
               {/* Social Icons */}
@@ -111,7 +111,7 @@ export default function Portfolio() {
                   href="https://github.com/aravindjinna1"
                   target="_blank"
                   rel="noreferrer"
-                  className="hover:text-yellow-300 hover:scale-110 transition"
+                  className="hover:text-yellow-300 active:scale-94 hover:scale-110 transition"
                 >
                   <FaGithub />
                 </a>
@@ -119,7 +119,7 @@ export default function Portfolio() {
                   href="https://www.linkedin.com/in/aravind-jinna-48ba2a2a0/"
                   target="_blank"
                   rel="noreferrer"
-                  className="hover:text-yellow-300 hover:scale-110 transition"
+                  className="hover:text-yellow-300 active:scale-94 hover:scale-110 transition"
                 >
                   <FaLinkedin />
                 </a>
@@ -128,7 +128,7 @@ export default function Portfolio() {
                   href="https://wa.me/+918106023616"
                   target="_blank"
                   rel="noreferrer"
-                  className="hover:text-yellow-300 hover:scale-110 transition"
+                  className="hover:text-yellow-300 active:scale-94  hover:scale-110 transition"
                 >
                   <FaWhatsapp />
                 </a>
@@ -136,7 +136,7 @@ export default function Portfolio() {
                   href="https://instagram.com"
                   target="_blank"
                   rel="noreferrer"
-                  className="hover:text-yellow-300 hover:scale-110 transition"
+                  className="hover:text-yellow-300 active:scale-94 hover:scale-110 transition"
                 >
                   <FaInstagram />
                 </a>
@@ -146,11 +146,11 @@ export default function Portfolio() {
               <div className="mt-4 flex space-x-4 mx-13 md:mx-0  relative z-40">
                 <button
                   onClick={() => ScrolltoContact()}
-                  className="cursor-pointer bg-cyan-500 text-black px-4 py-2 rounded-lg transition hover:bg-yellow-300 hover:-translate-y-1"
-                >
+                  className="cursor-pointer bg-[#ff00d0] active:scale-94 text-black px-4 py-2 rounded-lg transition hover:bg-yellow-300 hover:-translate-y-1"
+                  >
                   Hire Me
                 </button>
-                <button className="cursor-pointer bg-cyan-500 text-black px-4 py-2 rounded-lg transition hover:bg-yellow-300 hover:-translate-y-1">
+                <button className="cursor-pointer active:scale-94 bg-[#07f9f1] text-black px-4 py-2 rounded-lg transition hover:bg-yellow-300 hover:-translate-y-1">
                   <a href={Updatesoon}>Resume</a>
                 </button>
               </div>
@@ -166,10 +166,10 @@ export default function Portfolio() {
         initial={{ opacity: 0, y: 50, filter:'blur(10px)' }}
         animate={inView ? { opacity: 1, y: 0, filter:'blur(0px)' } : {}}
         transition={{ duration: 0.8, delay: 0.5 }}
-        className="flex justify-around text-lg relative z-30"
+        className="flex justify-around text-lg relative z-20"
       >
         <div className="text-center  md:mt-0 ">
-          <h2 className="text-2xl font-bold">30+</h2>
+          <h2 className="text-2xl font-bold">20+</h2>
           <p>Projects Completed</p>
         </div>
         <div className="text-center ">

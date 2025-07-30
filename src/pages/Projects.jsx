@@ -58,7 +58,7 @@ function Projects() {
 
   return (
     <div className="">
-      <h1 className=" text-center text-5xl font-bold my-10 relative z-30">
+      <h1 className=" text-center text-5xl font-bold my-10 relative z-20">
         Future <span className="text-sky-400">Projects</span>
       </h1>
       <div className="flex item-center justify-center grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 mx-[10%]">
@@ -75,7 +75,7 @@ function Projects() {
             className=" bg-gradient-to-r from-[#12c2e9] to-[#c471ed] text-[black] overflow-hidden md:mx-[10%] 
             shadow-[0px_0px_3px_0px_black] hover:shadow-[0px_0px_5px_0px_white] 
              transition-transform ease-in-out delay-2 duration-400 hover:bg-gradient-to-r hover:from-[#c471ed] hover:to-[#12c2e9]  flex items-center justify-center  max-h-140 max-w-150 sm:max-w-100 rounded-[5%] 
-             transition transform duration-400 hover:-translate-y-2 p-4 z-30 "
+             transition transform duration-400 hover:-translate-y-2 p-4 z-20 "
           >
             {/* border-2 rounded-[8%] shadow-[0_0px_5px_0px_black] // shadow-[0_0px_5px_1px_black]*/}
             <div>

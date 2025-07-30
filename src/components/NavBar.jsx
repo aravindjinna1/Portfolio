@@ -37,7 +37,7 @@ const Navbar = forwardRef(
     return (
       <nav
         onClick={(e) => e.stopPropagation()}
-        className="  flex justify-between gap-[10%] md:gap[30%] relative z-55 "
+        className="  flex justify-between gap-[10%] md:gap[30%] relative z-50 "
       >
         {/* <Portfolio   isOpen={isOpen} setIsOpen={setIsOpen}/> */}
         <></>
@@ -69,7 +69,7 @@ const Navbar = forwardRef(
 
           {/* Desktop Menu */}
 
-          <ul className="hidden md:flex space-x-6 font-medium relative ">
+          <ul className="hidden md:flex space-x-6 font-medium relative z-50 ">
             <button
               data-aos="fade-down"
               data-aos-delay="100"
@@ -121,7 +121,7 @@ const Navbar = forwardRef(
              data-aos="fade-left"
               data-aos-delay="500"
 
-            className={`md:hidden mt-4 backdrop-blur-[20px]  bg-[rgba(225,225,225,0.1)] space-y-2 block shadow-[0px_0px_5px_2px_black] h-400 w-600 size-20 z-100 relative  right-100 top-180 px-4 py-10 transition-transform duration-300 ease-out
+            className={`md:hidden mt-4 backdrop-blur-[20px]  bg-[rgba(225,225,225,0.1)] space-y-2 block shadow-[0px_0px_5px_2px_black] h-400 w-600 size-20 z-50 relative  right-100 top-180 px-4 py-10 transition-transform duration-300 ease-out
           ${isOpen ? "translate-x-0" : "-translate-x-full"}`}
           >
             <button 
@@ -132,7 +132,7 @@ const Navbar = forwardRef(
               className="mt-10 rounded-[50%] "
             >
               <svg
-                className="w-10 h-10 z-60  "
+                className="w-10 h-10 z-50  "
                 fill="none"
                 stroke="currentColor"
                 strokeWidth="2"

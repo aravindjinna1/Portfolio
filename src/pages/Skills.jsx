@@ -53,7 +53,7 @@ function Skills() {
   return (
     <div className="">
       <section id="skills" className="text-center py-12 ">
-        <h1 className="text-5xl font-bold  my-10 relative z-30">Skills</h1>
+        <h1 className="text-5xl font-bold  my-10 relative z-20">Skills</h1>
 
         <div
           //    ref={ref}
@@ -80,6 +80,7 @@ function Skills() {
             data-aos-delay="100"
             data-aos-mirror="false"
             data-aos-once="false"
+            data-aos-anchor-placement="center-bottom"
             // data-aos-anchor-placement="center-bottom"
 
             //  data-aos-mirror="true"
@@ -92,24 +93,24 @@ function Skills() {
             // data-aos-duration="800"
             // data-aos-easing="ease-in-out"
             // data-aos-once="false"
-            className=" border-animate fade-left  animate-fade-up-blur delay-1 flex flex-col justify-center items-center overflow-hidden text-white sm:w-[280px] sm:h-[280px] rounded-[20px] bg-black p-4 "
+            className="relative border-animate fade-left   animate-fade-up-blur delay-2 flex flex-col justify-center items-center overflow-hidden text-white sm:w-[280px] sm:h-[280px] rounded-[20px] bg-black p-4 "
           >
             {/* Title */}
-            <h1 className=" text-[20px]  mb-4 relative z-40">
+            <h1 className=" text-[20px]  mb-4 relative z-30">
               Front-end Tools
-            </h1>
+            </h1> 
 
             {/* First Row of Icons */}
-            <div className=" relative z-40 grid grid-cols-3 gap-4 place-items-center w-full mb-2 ">
+            <div className="grid grid-cols-3 gap-4 place-items-center w-full mb-2 relative z-40">
               <Icon
                 icon="skill-icons:html"
                 width="60"
-                className="hover:shadow-[0px_0px_15px_1px_red] scale-100 transition-all transform ease-in-out duration-200 hover:scale-105 rounded-[15px] cursor-pointer "
+                className="hover:shadow-[0px_0px_12px_1px_green] scale-100 transform ease-in-out duration-200 hover:scale-105 rounded-[15px] cursor-pointer "
               />
               <Icon
                 icon="skill-icons:css"
                 width="60"
-                className="hover:shadow-[0px_0px_12px_1px_#09a0f7] scale-100 transform ease-in-out duration-200 hover:scale-105 rounded-[15px] cursor-pointer"
+                className="hover:shadow-[0px_0px_12px_1px_green] scale-100 transform ease-in-out duration-200 hover:scale-105 rounded-[15px] cursor-pointer"
               />
               <Icon
                 icon="skill-icons:javascript"
@@ -122,21 +123,21 @@ function Skills() {
             </div>
 
             {/* Second Row of Icons */}
-            <div className="flex justify-center gap-6 w-full mt-2 relative z-40">
+            <div className="flex justify-center gap-6 w-full mt-2 relative z-30">
               <Icon
                 icon="skill-icons:react-light"
                 width="60"
-                className="hover:shadow-[0px_0px_12px_1px_aqua] scale-100 transform ease-in-out duration-200 hover:scale-105 rounded-[15px] cursor-pointer"
+                className="hover:shadow-[0px_0px_12px_1px_green] scale-100 transform ease-in-out duration-200 hover:scale-105 rounded-[15px] cursor-pointer"
               />
               <Icon
                 icon="skill-icons:tailwindcss-dark"
                 width="60"
-                className="hover:shadow-[0px_0px_12px_1px_#09e7f7] scale-100 transform ease-in-out duration-200 hover:scale-105 rounded-[15px] cursor-pointer"
+                className="hover:shadow-[0px_0px_12px_1px_green] scale-100 transform ease-in-out duration-200 hover:scale-105 rounded-[15px] cursor-pointer"
               />
             </div>
 
             {/* Optional border effect background layer */}
-            <div className="absolute inset-0 z-40 animate-pulse border-4 border-gradient-to-tr from-pink-500 via-blue-500 to-purple-500 rounded-[20px] opacity-30 "></div>
+            {/* <div className="absolute inset-0 z-40 animate-pulse border-4 border-gradient-to-tr from-pink-500 via-blue-500 to-purple-500 rounded-[20px] opacity-30 "></div> */}
           </div>
 
           <div
@@ -227,7 +228,7 @@ function Skills() {
               {" "}
               Other & Tools Technologies
             </h1>
-            <div className="grid grid-cols-3 gap-4 place-items-center w-full mb-2 relative z-0">
+            <div className="grid grid-cols-3 gap-4 place-items-center w-full mb-2 relative z-40">
               <Icon
                 icon="ri:github-fill"
                 width="60"

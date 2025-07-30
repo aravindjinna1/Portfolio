@@ -59,34 +59,34 @@ useEffect(() => {
  
   return (
     
-    <div className=" relative z-30">
+    <div className=" relative z-20 ">
      
-      <h1 className="text-center text-5xl font-bold my-10">
+      <h1 className="text-center text-5xl font-bold my-10 relative z-20">
         Contact
       </h1>
-      <div className="w-[100%] my-15  flex ml-[10%] overflow-hidden  max-h-full grid gap-4 grid-cols-1 md:grid-cols-2  ">
-        <div className="flex justify-start items-start  flex-col"
+      <div className="max-w-full my-[5%] flex justify-center mx-[10%] overflow-hidden relative z-20 max-h-full grid gap-2 grid-cols-1 md:grid-cols-2  ">
+        <div className="flex  flex-col"
          data-aos="fade-down"
         >
           <h1 className="text-[20px] md:text-[35px] ">
             Get in touch...📩
           </h1>
-          <p className=" flex flex-wrap max-w-200 md:max-w-90 ">
+          <p className=" flex flex-wrap max-w-170 md:max-w-90 ">
             If you're looking for someone who delivers—not just promises—I'm
             ready to make a difference.
           </p>
 
-          <div className="space-x-2 sticky z-30 ">
+          <div className="space-x-2 relative z-20 ">
             <a
               href="mailto:aravindjinna1@gmail.com?subject=Hello&body=Message content "
-              className="bg-white rounded-[5px] p-1 text-black text-[10px] inline-block transform transition-transform scale-100 duration-300 hover:scale-110"
+              className="bg-white rounded-[5px] active:scale-94 p-1 text-black text-[10px] inline-block transform transition-transform scale-100 duration-300 hover:scale-110"
             >
              📧 Send Email
             </a>
 
             <a
               href="tel:+918106023616"
-              className="bg-white rounded-[5px] p-1 text-black text-[10px] inline-block transform transition-transform scale-100 duration-300 hover:scale-110"
+              className="bg-white rounded-[5px] active:scale-94  p-1 text-black text-[10px] inline-block transform transition-transform scale-100 duration-300 hover:scale-110"
             >
               📞+91 8106023616
             </a>
@@ -94,7 +94,7 @@ useEffect(() => {
               href="https://wa.me/+918106023616"
               target="_blank"
               rel="noreferrer"
-              className="bg-white rounded-[5px] p-1 text-black text-[10px] inline-block transform transition-transform scale-100 duration-300 hover:scale-110"
+              className="bg-white rounded-[5px] active:scale-94 p-1 text-black text-[10px] inline-block transform transition-transform scale-100 duration-300 hover:scale-110"
             >
               💬 WhatsApp Me
             </a>
@@ -103,8 +103,8 @@ useEffect(() => {
 
         <div 
          data-aos="fade-up"
-        className=" rounded-[10px] border-1 w-[80%] md:w-[70%] flex justify-center z-30">
-          <form onSubmit={handleSubmit} className="grid gap-3 md:gap-4 my-10 md:my-5  z-30">
+        className="my-[10%] md:my-[5%] rounded-[10px] border-1 w-full md:w-[90%] flex justify-center relativve z-30">
+          <form onSubmit={handleSubmit} className="grid gap-3 md:gap-4 my-[7%] md:my-5 relative z-30">
             <input
               type="text"
               name="name"

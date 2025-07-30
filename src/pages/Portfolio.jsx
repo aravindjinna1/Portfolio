@@ -1,5 +1,5 @@
 import "../styles.css";
-// import AravImg from "../assets/Mee.jpg";
+import AravImg from "../assets/mee.jpg";
 import React, { Suspense, useRef } from "react";
 import NavBar from "../components/NavBar";
 import Updatesoon from "../assets/updatessoon.jpg";

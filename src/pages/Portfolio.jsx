@@ -1,5 +1,5 @@
 import "../styles.css";
-import bittuImg from "../assets/mee.jpg";
+// import AravImg from "../assets/Mee.jpg";
 import React, { Suspense, useRef } from "react";
 import NavBar from "../components/NavBar";
 import Updatesoon from "../assets/updatessoon.jpg";
@@ -9,7 +9,6 @@ import Updatesoon from "../assets/updatessoon.jpg";
 import { motion, AnimatePresence } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
-import MeeImg from '../assets/MeeImg.jpg'
 // import SplashCursor from './SplashCursor'
 const About = React.lazy(() => import("./About"));
 
@@ -77,7 +76,7 @@ export default function Portfolio() {
               transition={{ delay: 0.6, duration: 0.8 }}
             >
               <img
-                src={MeeImg}
+                src={AravImg}
                 alt="Profile"
                 className=" w-[240px] h-[240px] relative z-30 md:bottom-5 md:left-18  rounded-full object-cover border-4 border-white shadow-[0_0_14px_3px_rgb(1,181,251)]"
               />

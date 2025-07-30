@@ -6,7 +6,7 @@ import { Icon } from "@iconify/react";
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 
-import * as AOS from "aos"; // ✅ Works reliably
+import AOS from 'aos'
 import "aos/dist/aos.css";
 function Projects() {
   //  let code = '</code>'

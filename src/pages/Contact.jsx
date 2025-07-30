@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import * as AOS from "aos"; // ✅ Works reliably
+import AOS from 'aos'// ✅ Works reliably
 import "aos/dist/aos.css";
 function Contact() {
  const [formData, setFormData] = useState({

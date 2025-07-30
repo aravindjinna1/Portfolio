@@ -7,12 +7,15 @@ import About from './pages/About'
 import Skills from './pages/Skills';
 import Projects from './pages/Projects'
 import Contact from './pages/Contact'
+import SplashCursor from './pages/SplashCursor'
+// import SplashEffect from './SplashCur'
 
 function App() {
 
  return(
    <>
-         <Navbar />
+         <SplashCursor className="" />
+         {/* <SplashEffect /> */}
         <Routes>
             <Route path='/' element={<Portfolio/>} />
             <Route path='/About' element={<About/>} />

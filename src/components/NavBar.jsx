@@ -1,37 +1,183 @@
+import React, {
+  forwardRef,
+  useEffect,
+  useImperativeHandle,
+  useState,
+} from "react";
+// import Portfolio from '../pages/Portfolio';
+import * as AOS from "aos"; // ✅ Works reliably
+import "aos/dist/aos.css";
+const Navbar = forwardRef(
+  ({ HomeRef, AboutRef, SkillsRef, ProjectsRef, ContactRef }, ref) => {
+    useEffect(() => {
+      AOS.init = { duration: 0.8 };
+    });
 
+    const [isOpen, setIsOpen] = useState(false);
 
-import React from 'react'
+    useImperativeHandle(ref, () => ({
+      closeMenu: () => setIsOpen(false),
+    }));
 
-export default function NavBar({AboutRef, SkillsRef, ProjectsRef, ContactRef }){
-    
-      const ScrollToAbout=()=>{
-        AboutRef.current.scrollIntoView({ behavior: 'smooth' })
-      }
-       const ScrollToSkills=()=>{
-         SkillsRef.current.scrollIntoView({ behavior: 'smooth' })
-      }
-      const ScrollToProjects=()=>{
-        ProjectsRef.current.scrollIntoView({ behavior:'smooth'})
-      }
-      const ScrollToContact=()=>{
-        ContactRef.current.scrollIntoView({ behavior:'smooth' })
-      }
-    return(
-     <div className="flex justify-around gap-1 flex space-x-4 sm:space-x-8  relative top-15 right-65  sm:right-auto sm:top-auto">
-        {/* <nav className="flex space-x-4 sm:space-x-8  relative top-15 right-67  sm:right-auto sm:top-auto" >
-          <Link to='/' className="text-lg hover:text-cyan-400">Home</Link>
-          <Link to='/About' className="text-lg hover:text-cyan-400">About</Link>
-          <Link to='/Skills' className="text-lg hover:text-cyan-400">Skills</Link>
-          <Link to='/Projects' className="text-lg hover:text-cyan-400">Projects</Link>
-          <Link to='/Contact' className="text-lg hover:text-cyan-400">Contact</Link>
-          </nav> */}
-      <button  className='cursor-pointer  transition:translate-y hover:border-b-2 hover:border-b-cyan-500'>Home</button>
+    const ScrollToHome = () =>
+      HomeRef.current.scrollIntoView({ behavior: "smooth" });
 
-       <button onClick={()=> ScrollToAbout()} className='cursor-pointer  text-lg hover:border-b-4-red-500'>About</button>
-       <button onClick={()=> ScrollToSkills()} className='cursor-pointer text-lg hover:text-yellow-300 transition'>Skills</button>
-       <button onClick={()=> ScrollToProjects()} className='cursor-pointer text-lg hover:text-yellow-300 transition'>Projects</button>
-       <button onClick={()=> ScrollToContact()} className='cursor-pointer text-lg hover:text-yellow-300'>Contact</button>
+    const ScrollToAbout = () =>
+      AboutRef.current.scrollIntoView({ behavior: "smooth" });
 
-     </div>
-    )
-}
+    const ScrollToSkills = () =>
+      SkillsRef.current.scrollIntoView({ behavior: "smooth" });
+
+    const ScrollToProjects = () =>
+      ProjectsRef.current.scrollIntoView({ behavior: "smooth" });
+
+    const ScrollToContact = () =>
+      ContactRef.current.scrollIntoView({ behavior: "smooth" });
+
+    return (
+      <nav
+        onClick={(e) => e.stopPropagation()}
+        className="  flex justify-between gap-[10%] md:gap[30%] relative z-55 "
+      >
+        {/* <Portfolio   isOpen={isOpen} setIsOpen={setIsOpen}/> */}
+        <></>
+        <div className="flex items-center max-w-200 max-h-200">
+          {/* Toggle Button */}
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="md:hidden focus:outline-none"
+          >
+            {/* Hamburger icon when menu is closed */}
+            {!isOpen && (
+              <svg
+                data-aos="fade-down"
+                data-aos-delay="500"
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            )}
+          </button>
+
+          {/* Desktop Menu */}
+
+          <ul className="hidden md:flex space-x-6 font-medium relative ">
+            <button
+              data-aos="fade-down"
+              data-aos-delay="100"
+              onClick={() => ScrollToHome()}
+              className="cursor-pointer hover:text-[#f709b8] transition "
+            >
+              Home
+            </button>
+
+            <button
+              data-aos="fade-down"
+              data-aos-delay="200"
+              onClick={() => ScrollToAbout()}
+              className="cursor-pointer  text-lg hover:text-[#f709b8] transition "
+            >
+              About
+            </button>
+            <button
+              data-aos="fade-down"
+              data-aos-delay="300"
+              onClick={() => ScrollToSkills()}
+              className="cursor-pointer text-lg hover:text-[#f709b8] transition"
+            >
+              Skills
+            </button>
+            <button
+              data-aos="fade-down"
+              data-aos-delay="400"
+              onClick={() => ScrollToProjects()}
+              className="cursor-pointer text-lg hover:text-[#f709b8] transition"
+            >
+              Projects
+            </button>
+            <button
+              data-aos="fade-down"
+              data-aos-delay="500"
+              onClick={() => ScrollToContact()}
+              className="cursor-pointer text-lg hover:text-[#f709b8]"
+            >
+              Contact
+            </button>
+          </ul>
+        </div>
+
+        {/* Mobile Menu */}
+        {isOpen && (
+          <div 
+            onClick={(e) => e.stopPropagation()}
+             data-aos="fade-left"
+              data-aos-delay="500"
+
+            className={`md:hidden mt-4 backdrop-blur-[20px]  bg-[rgba(225,225,225,0.1)] space-y-2 block shadow-[0px_0px_5px_2px_black] h-400 w-600 size-20 z-100 relative  right-100 top-180 px-4 py-10 transition-transform duration-300 ease-out
+          ${isOpen ? "translate-x-0" : "-translate-x-full"}`}
+          >
+            <button 
+             
+              
+              onClick={() => setIsOpen(!isOpen)}
+              
+              className="mt-10 rounded-[50%] "
+            >
+              <svg
+                className="w-10 h-10 z-60  "
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+
+            <button className="cursor-pointer block text-[40px]  block hover:text-yellow-300 transition ">
+              Home
+            </button>
+            <button
+              onClick={() => ScrollToAbout()}
+              className="cursor-pointer  text-[40px] block  text-lg hover:text-yellow-300 transition "
+            >
+              About
+            </button>
+            <button
+              onClick={() => ScrollToSkills()}
+              className="cursor-pointer  text-[40px] block text-lg hover:text-yellow-300 transition"
+            >
+              Skills
+            </button>
+            <button
+              onClick={() => ScrollToProjects()}
+              className="cursor-pointer  text-[40px] block text-lg hover:text-yellow-300 transition"
+            >
+              Projects
+            </button>
+            <button
+              onClick={() => ScrollToContact()}
+              className="cursor-pointer  text-[40px] block text-lg hover:text-yellow-300"
+            >
+              Contact
+            </button>
+          </div>
+        )}
+      </nav>
+    );
+  }
+);
+
+export default Navbar;

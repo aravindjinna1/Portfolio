@@ -64,7 +64,7 @@ useEffect(() => {
       <h1 className="text-center text-5xl font-bold my-10 relative z-20">
         Contact
       </h1>
-      <div className="max-w-full my-[5%] flex justify-center mx-[10%] overflow-hidden relative z-20 max-h-full grid gap-2 grid-cols-1 md:grid-cols-2  ">
+      <div className="max-w-full my-[5%] flex justify-center mx-[8%] overflow-hidden relative z-20 max-h-full grid gap-2 grid-cols-1 md:grid-cols-2  ">
         <div className="flex  flex-col"
          data-aos="fade-down"
         >
@@ -103,7 +103,7 @@ useEffect(() => {
 
         <div 
          data-aos="fade-up"
-        className="my-[10%] md:my-[5%] rounded-[10px] border-1 w-full md:w-[90%] flex justify-center relativve z-30">
+        className="my-[10%] md:my-[5%]  rounded-[10px] border-1 w-full md:w-[90%] flex justify-center relative z-30">
           <form onSubmit={handleSubmit} className="grid gap-3 md:gap-4 my-[7%] md:my-5 relative z-30">
             <input
               type="text"
@@ -112,7 +112,7 @@ useEffect(() => {
               onChange={handleChange}
               placeholder="Your Name"
               required
-              className="border-1 p-2 rounded-[10px] w-70 md:w-80  z-30"
+              className="border-1  p-2 rounded-[10px] w-70 md:w-80  z-30"
             />
             <input
               type="email"

@@ -16,7 +16,7 @@ const Footer = () => {
   },[])
 
   return (
-    <div className="relative h-25 flex flex-col items-center justify-center gap-2 shadow-[0px_5px_5px_5px_black] z-30">
+    <div className="relative h-25 flex flex-col items-center justify-center gap-2 shadow-[0px_5px_5px_5px_black] z-20">
       <div 
             data-aos="fade-down"
             // data-aos-delay="100"

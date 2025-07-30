@@ -48,8 +48,8 @@ export default function Portfolio() {
       {/* Page 1 */}
       <section className="Page1 relative z-30">
         {/* Header */}
-        <header className=" fixed top-0 w-full h-20 flex gap-10 md:20  shadow-[0px_0px_5px_0px_#000009ff] z-40 flex justify-between items-center px-10 py-6 sm:mb-[40px]">
-          <h1 className=" flex justify-center animate-wiggle backdrop-blur-[20px] shadow-[0_10px_20px_rgba(0,0,0,0.3)] bg-[rgba(225,225,225,0.1)] w-[300px] h-[50px] rounded-[10px] text-5xl  relative left-[10%] md:left-10 top-0 sm:mt-0   ">
+        <header className=" fixed top-0 w-full h-20 flex gap-10  shadow-[0px_0px_5px_0px_#000009ff] z-40 flex justify-between items-center px-10 py-6 sm:mb-[40px] ">
+          <h1 className=" flex justify-center animate-wiggle backdrop-blur-[20px] shadow-[0_10px_20px_rgba(0,0,0,0.3)] bg-[rgba(225,225,225,0.1)] w-[300px] h-[50px] rounded-[10px] text-5xl  relative left-[6%] md:left-10 top-0 sm:mt-0   ">
             Port<span className="text-sky-400">folio</span>
           </h1>
 

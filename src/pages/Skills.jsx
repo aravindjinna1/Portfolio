@@ -112,7 +112,7 @@ function Skills() {
                 width="60"
                 className="hover:shadow-[0px_0px_12px_1px_green] scale-100 transform ease-in-out duration-200 hover:scale-105 rounded-[15px] cursor-pointer"
               />
-              <Icon
+              <Icon 
                 icon="skill-icons:javascript"
                 width="60"
                 className="hover:shadow-[0px_0px_15px_0px_yellow] scale-100 transform ease-in-out duration-200 hover:scale-105 rounded-[15px] cursor-pointer"

@@ -40,7 +40,7 @@ const Navbar = forwardRef(
         className="  flex justify-between gap-[10%] md:gap[30%] relative z-50 "
       >
         {/* <Portfolio   isOpen={isOpen} setIsOpen={setIsOpen}/> */}
-        <></>
+        
         <div className="flex items-center max-w-200 max-h-200">
           {/* Toggle Button */}
           <button
@@ -52,6 +52,7 @@ const Navbar = forwardRef(
               <svg
                 data-aos="fade-down"
                 data-aos-delay="500"
+
                 className="w-6 h-6"
                 fill="none"
                 stroke="currentColor"

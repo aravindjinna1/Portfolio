@@ -13,33 +13,30 @@ function Projects() {
   const ProjectsData = [
     {
       id: 101,
-      image:
-        "https://cimg0.ibsrv.net/ibimg/hgm/1920x1080-1/100/879/r34-nissan-skyline-gt-r-from-fast-and-furious-4--photo-credit-bonhams_100879624.jpg",
-      title: "Cars World",
-      description: "Car Buy, Sell & Rental Platform.",
+      image: JobSearch,
+      title: "WorkOnCall",
+      description: "Local Job Search App for Communities.",
       toolsUsed: "React, Tailwindcss, Redux, Nodejs, Expressjs, MongoDb",
     },
     {
       id: 102,
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT18b7znox2gkZ0yaxLU0WOMLaJQgn1gPo_LQ&s",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT18b7znox2gkZ0yaxLU0WOMLaJQgn1gPo_LQ&s",
       title: "Promtify",
       description: "AI Image-to-Prompt Generator Tool",
       toolsUsed: "React, Tailwindcss, Redux, Nodejs, Expressjs, MongoDb",
     },
     {
       id: 103,
-      image:
-        "https://cdn.prod.website-files.com/655cc140ec69a31f681e0556/660d32f75a370f1b528575fa_img-blog-pwa-jul-21-mitrais-1024x536.webp",
+      image:"https://cdn.prod.website-files.com/655cc140ec69a31f681e0556/660d32f75a370f1b528575fa_img-blog-pwa-jul-21-mitrais-1024x536.webp",
       title: "Agri Tech",
       description: "AgriTech Help App for Natural Farming",
       toolsUsed: `React, Tailwindcss, Redux, Nodejs, Expressjs, MongoDb`,
     },
     {
       id: 104,
-      image: JobSearch,
-      title: "Local Hire",
-      description: "Local Job Search App for Communities",
+      image: "https://cdn.prod.website-files.com/655cc140ec69a31f681e0556/660d32f75a370f1b528575fa_img-blog-pwa-jul-21-mitrais-1024x536.webp",
+      title: "Cars hear",
+      description: "Car Buy, Sell & Rental Platform.",
       toolsUsed: `React, Tailwindcss, Redux, Nodejs, Expressjs, MongoDb`,
     },
   ];

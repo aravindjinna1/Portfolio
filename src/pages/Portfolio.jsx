@@ -24,6 +24,7 @@ const Footer = React.lazy(() => import("./Footer"));
 
 import { FaInstagram, FaWhatsapp, FaLinkedin, FaGithub } from "react-icons/fa";
 
+
 export default function Portfolio() {
   const { ref, inView } = useInView();
  
@@ -41,10 +42,6 @@ export default function Portfolio() {
 
   return (
   
-
-   
-
-
     <div
     
       onClick={() => menuRef.current?.closeMenu()}
@@ -57,10 +54,10 @@ export default function Portfolio() {
 
    
       
-      <section className="flex flex-col Page1 z-30 h-full w-full" style={{ position: "relative", overflow: "hidden",  }}>
+      <section className="flex flex-col Page1 z-30 h-full w-full " style={{ position: "relative", overflow: "hidden",  }}>
         {/* Header */}
 
-          <div style={{ position: "absolute", inset: 0, zIndex: 0 }} className="hidden md:flex  md:h-auto md:w-auto" >
+          <div style={{ position: "absolute", inset: 0, zIndex: 0 }} className="hidden  md:h-auto md:w-auto" >
           <DotLottieReact
           src="https://lottie.host/87232dd1-5f2a-4cad-8d24-c6a44d588d1d/HhEhdlSbGJ.lottie"
           autoplay
@@ -75,8 +72,23 @@ export default function Portfolio() {
           loop
           
         />
-        </div>
+        </div >
+        
+        <motion.div style={{ position: "absolute", inset: 0, zIndex: 0 }} className="mb-45 md:mb-auto md:mr-95 md:mt-10  flex items-center justify-center  md:block"
+       
+              ref={ref}
+              initial={{ opacity: 0, y: -150,filter: 'blur(10px)' }}
+              animate={inView ? { opacity: 1, y: 0, filter: 'blur(0px)' }  : {}}
+              transition={{ delay: 0.6, duration: 0.8 }}
+              >
 
+         <DotLottieReact
+      src="https://lottie.host/d445ef10-d226-41fd-b81c-a0717016808c/0pypYyiVgS.lottie"
+      loop
+      autoplay
+    />
+
+    </motion.div>
         <header className=" fixed top-0 w-full h-20 flex gap-10  shadow-[0px_0px_5px_0px_#000009ff] z-40 flex justify-between items-center px-10 py-6 sm:mb-[40px] ">
           <h1 className=" flex justify-center animate-wiggle backdrop-blur-[20px] shadow-[0_10px_20px_rgba(0,0,0,0.3)] bg-[rgba(225,225,225,0.1)] w-[300px] h-[50px] rounded-[10px] text-5xl  relative left-[6%] md:left-10 top-0 sm:mt-0   ">
             Port<span className="text-sky-400">folio</span>
@@ -106,10 +118,10 @@ export default function Portfolio() {
               animate={inView ? { opacity: 1, x: 0, filter: 'blur(0px)' }  : {}}
               transition={{ delay: 0.6, duration: 0.8 }}
             >
-              <img
+              <img 
               src={AravImg}
                 alt="Profile"
-                className=" w-[240px] h-[240px] relative z-30 md:bottom-5 md:left-18   object-cover "
+                className="animate-hero w-[240px] h-[240px] relative z-30 md:bottom-5 md:left-18   object-cover "
               />
             </motion.div>
 

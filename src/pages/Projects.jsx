@@ -20,7 +20,7 @@ function Projects() {
     },
     {
       id: 102,
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT18b7znox2gkZ0yaxLU0WOMLaJQgn1gPo_LQ&s",
+      image: "https://www.actian.com/wp-content/uploads/2024/01/gen-ai-best-practices.jpg",
       title: "Promtify",
       description: "AI Image-to-Prompt Generator Tool",
       toolsUsed: "React, Tailwindcss, Redux, Nodejs, Expressjs, MongoDb",
@@ -34,7 +34,7 @@ function Projects() {
     },
     {
       id: 104,
-      image: "https://cdn.prod.website-files.com/655cc140ec69a31f681e0556/660d32f75a370f1b528575fa_img-blog-pwa-jul-21-mitrais-1024x536.webp",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr68FUxjLDEW0JRl6JJbZ2dc-qF_MJ0rHJiw&s",
       title: "Cars hear",
       description: "Car Buy, Sell & Rental Platform.",
       toolsUsed: `React, Tailwindcss, Redux, Nodejs, Expressjs, MongoDb`,

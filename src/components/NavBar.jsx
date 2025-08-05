@@ -7,6 +7,7 @@ import React, {
 // import Portfolio from '../pages/Portfolio';
 import * as AOS from "aos"; // ✅ Works reliably
 import "aos/dist/aos.css";
+import { Icon } from "@iconify/react/dist/iconify.js";
 const Navbar = forwardRef(
   ({ HomeRef, AboutRef, SkillsRef, ProjectsRef, ContactRef }, ref) => {
     useEffect(() => {
@@ -49,22 +50,25 @@ const Navbar = forwardRef(
           >
             {/* Hamburger icon when menu is closed */}
             {!isOpen && (
-              <svg
-                data-aos="fade-down"
-                data-aos-delay="500"
+              // <svg
+              //   data-aos="fade-down"
+              //   data-aos-delay="500"
 
-                className="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              </svg>
+              //   className="w-6 h-6"
+              //   fill="none"
+              //   stroke="currentColor"
+              //   strokeWidth="2"
+              //   viewBox="0 0 24 24"
+              // >
+
+              <Icon icon="ph:hamburger-light" width="40" className="hover:bg-[rgba(255,255,255,0.1)] hover:rounded-[25%]"/>
+
+              //   <path
+              //     strokeLinecap="round"
+              //     strokeLinejoin="round"
+              //     d="M4 6h16M4 12h16M4 18h16"
+              //   />
+              // </svg>
             )}
           </button>
 
@@ -122,7 +126,7 @@ const Navbar = forwardRef(
              data-aos="fade-left"
               data-aos-delay="500"
 
-            className={`md:hidden mt-4 backdrop-blur-[20px]  bg-[rgba(225,225,225,0.1)] space-y-2 block shadow-[0px_0px_5px_2px_black] h-400 w-600 size-20 z-50 relative  right-100 top-180 px-4 py-10 transition-transform duration-300 ease-out
+            className={`md:hidden mt-4 backdrop-blur-[20px]  bg-[rgba(255, 255, 255, 0.1)] space-y-2 block shadow-[0px_0px_5px_2px_black] h-400 w-600 size-20 z-50 relative  right-100 top-180 px-4 py-10 transition-transform duration-300 ease-out
           ${isOpen ? "translate-x-0" : "-translate-x-full"}`}
           >
             <button 
@@ -133,10 +137,10 @@ const Navbar = forwardRef(
               className="mt-10 rounded-[50%] "
             >
               <svg
-                className="w-10 h-10 z-50  "
+                className="w-10 h-10 z-50 hover:bg-[rgba(255,255,255,0.1)] hover:rounded-[50%] "
                 fill="none"
                 stroke="currentColor"
-                strokeWidth="2"
+                strokeWidth="2.5"
                 viewBox="0 0 24 24"
               >
                 <path

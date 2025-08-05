@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 import AOS from 'aos'// ✅ Works reliably
 import "aos/dist/aos.css";
@@ -60,6 +61,14 @@ useEffect(() => {
   return (
     
     <div className=" relative z-20 ">
+
+      <div className="absolute bottom-[65%] right-[24%] md:bottom-55 md:left-65 w-[500px] ">
+          <DotLottieReact
+            src="https://lottie.host/2cee11bb-b73b-42ec-ad12-a8e42aa9a127/UQIHbmchSu.lottie"
+            loop
+            autoplay
+              />
+    </div>
      
       <h1 className="text-center text-5xl font-bold my-10 relative z-20">
         Contact
@@ -103,8 +112,10 @@ useEffect(() => {
 
         <div 
          data-aos="fade-up"
-        className="my-[10%] md:my-[5%]  rounded-[10px] border-1 w-full md:w-[90%] flex justify-center relative z-30">
+        className="my-[10%] md:my-[5%] relative rounded-[10px] border-1 w-full md:w-[90%] flex justify-center relative z-30">
+       
           <form onSubmit={handleSubmit} className="grid gap-3 md:gap-4 my-[7%] md:my-5 relative z-30">
+           
             <input
               type="text"
               name="name"
@@ -114,6 +125,7 @@ useEffect(() => {
               required
               className="border-1  p-2 rounded-[10px] w-70 md:w-80  z-30"
             />
+      
             <input
               type="email"
               placeholder="Your Email"

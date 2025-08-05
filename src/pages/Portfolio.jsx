@@ -1,10 +1,11 @@
 import "../styles.css";
-import AravImg from "../assets/mee.jpg";
+import AravImg from "../assets/deskman2.png";
 import React, { Suspense, useRef } from "react";
 import NavBar from "../components/NavBar";
 import Updatesoon from "../assets/updatessoon.jpg";
 // import Footer from './Footer'
 // import About from './About'
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 import { motion, AnimatePresence } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -25,7 +26,7 @@ import { FaInstagram, FaWhatsapp, FaLinkedin, FaGithub } from "react-icons/fa";
 
 export default function Portfolio() {
   const { ref, inView } = useInView();
-
+ 
   // const HandleChangeState = () => setIsOpen(prev => !prev);
 
   const menuRef = useRef();
@@ -39,15 +40,43 @@ export default function Portfolio() {
     ContactRef.current.scrollIntoView({ behavior: "smooth" });
 
   return (
+  
+
+   
+
+
     <div
+    
       onClick={() => menuRef.current?.closeMenu()}
       ref={HomeRef}
-      className="overflow-hidden "
+      className="overflow-hidden"
     >
+    
       {/* <SplashCursor /> */}
       {/* Page 1 */}
-      <section className="Page1 relative z-30">
+
+   
+      
+      <section className="flex flex-col Page1 z-30 h-full w-full" style={{ position: "relative", overflow: "hidden",  }}>
         {/* Header */}
+
+          <div style={{ position: "absolute", inset: 0, zIndex: 0 }} className="hidden md:flex  md:h-auto md:w-auto" >
+          <DotLottieReact
+          src="https://lottie.host/87232dd1-5f2a-4cad-8d24-c6a44d588d1d/HhEhdlSbGJ.lottie"
+          autoplay
+          loop
+          
+        />
+      </div>
+       <div style={{ position: "absolute", inset: 0, zIndex: 0 }} className="hidden" >
+          <DotLottieReact
+          src="https://lottie.host/87232dd1-5f2a-4cad-8d24-c6a44d588d1d/HhEhdlSbGJ.lottie"
+          autoplay
+          loop
+          
+        />
+        </div>
+
         <header className=" fixed top-0 w-full h-20 flex gap-10  shadow-[0px_0px_5px_0px_#000009ff] z-40 flex justify-between items-center px-10 py-6 sm:mb-[40px] ">
           <h1 className=" flex justify-center animate-wiggle backdrop-blur-[20px] shadow-[0_10px_20px_rgba(0,0,0,0.3)] bg-[rgba(225,225,225,0.1)] w-[300px] h-[50px] rounded-[10px] text-5xl  relative left-[6%] md:left-10 top-0 sm:mt-0   ">
             Port<span className="text-sky-400">folio</span>
@@ -64,7 +93,9 @@ export default function Portfolio() {
         </header>
 
         {/* Hero */}
+      
         <main>
+          
           <div className="flex flex-col  md:flex-row justify-center items-center items-center mt-30 md:mr-[20%] gap-6">
             {/* Image */}
 
@@ -76,9 +107,9 @@ export default function Portfolio() {
               transition={{ delay: 0.6, duration: 0.8 }}
             >
               <img
-                src={AravImg}
+              src={AravImg}
                 alt="Profile"
-                className=" w-[240px] h-[240px] relative z-30 md:bottom-5 md:left-18  rounded-full object-cover border-4 border-white shadow-[0_0_14px_3px_rgb(1,181,251)]"
+                className=" w-[240px] h-[240px] relative z-30 md:bottom-5 md:left-18   object-cover "
               />
             </motion.div>
 
@@ -92,6 +123,7 @@ export default function Portfolio() {
               transition={{ delay: 0.5, duration: 0.8,  }}
               className="block flex-col  relative left:15 md:left-28 bottom-7 sm:flex sm:items-start sm:text-left sm:gap-1"
             >
+              
               <h2 className="text-2xl mx-23 mt-5 md:mx-0  relative z-30">
                 Hello, I'm
               </h2>
@@ -156,10 +188,11 @@ export default function Portfolio() {
               </div>
             </motion.div>
             {/* </AnimatePresence> */}
+            
           </div>
         </main>
-      </section>
-
+       
+      
       {/* Page 2 - Stats */}
       <motion.section
         
@@ -177,6 +210,10 @@ export default function Portfolio() {
           <p>Technologies Mastered</p>
         </div>
       </motion.section>
+            </section>
+
+      
+
 
       <div ref={AboutRef}>
         <Suspense fallback={<p>Loading About...</p>}>

@@ -70,9 +70,9 @@ function Projects() {
 
             key={project.id}
             className=" bg-gradient-to-r from-[#12c2e9] to-[#c471ed] text-[black] overflow-hidden md:mx-[10%] 
-            shadow-[0px_0px_3px_0px_black] hover:shadow-[0px_0px_5px_0px_white] 
+            shadow-[0px_0px_3px_0px_black] hover:shadow-[0px_0px_5px_1px_white] 
              transition-transform ease-in-out delay-2 duration-400 hover:bg-gradient-to-r hover:from-[#c471ed] hover:to-[#12c2e9]  flex items-center justify-center  max-h-140 max-w-150 sm:max-w-100 rounded-[5%] 
-             transition transform duration-400 hover:-translate-y-2 p-4 z-20 "
+             transition transform duration-400  p-4 z-20 "
           >
             {/* border-2 rounded-[8%] shadow-[0_0px_5px_0px_black] // shadow-[0_0px_5px_1px_black]*/}
             <div>

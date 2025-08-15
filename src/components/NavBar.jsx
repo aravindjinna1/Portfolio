@@ -38,11 +38,11 @@ const Navbar = forwardRef(
     return (
       <nav
         onClick={(e) => e.stopPropagation()}
-        className="  flex justify-between gap-[10%] md:gap[30%] relative z-50 "
+        className="  flex justify-between gap-[7%] md:gap[30%] relative z-50 "
       >
         {/* <Portfolio   isOpen={isOpen} setIsOpen={setIsOpen}/> */}
         
-        <div className="flex items-center max-w-200 max-h-200">
+        <div className="flex items-center max-w-300 max-h-200">
           {/* Toggle Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
@@ -50,25 +50,26 @@ const Navbar = forwardRef(
           >
             {/* Hamburger icon when menu is closed */}
             {!isOpen && (
-              // <svg
-              //   data-aos="fade-down"
-              //   data-aos-delay="500"
+              <svg
+                data-aos="fade-down"
+                data-aos-delay="500"
 
-              //   className="w-6 h-6"
-              //   fill="none"
-              //   stroke="currentColor"
-              //   strokeWidth="2"
-              //   viewBox="0 0 24 24"
-              // >
+                className="w-8 h-6"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="3"
+                viewBox="0 0 24 24"
+              >
 
-              <Icon icon="ph:hamburger-light" width="40" className="hover:bg-[rgba(255,255,255,0.1)] hover:rounded-[25%]"/>
+              {/* <Icon icon="ph:hamburger-light" width="40" className="hover:bg-[rgba(255,255,255,0.1)] hover:rounded-[25%]"/> */}
 
-              //   <path
-              //     strokeLinecap="round"
-              //     strokeLinejoin="round"
-              //     d="M4 6h16M4 12h16M4 18h16"
-              //   />
-              // </svg>
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M4 6h20 M10 12h14"
+                  // d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
             )}
           </button>
 

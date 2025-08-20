@@ -54,20 +54,20 @@ const Navbar = forwardRef(
                 data-aos="fade-down"
                 data-aos-delay="500"
 
-                className="w-8 h-6"
+                className="w-10 h-6"
                 fill="none"
                 stroke="currentColor"
-                strokeWidth="3"
+                strokeWidth="2.5"
                 viewBox="0 0 24 24"
               >
 
               {/* <Icon icon="ph:hamburger-light" width="40" className="hover:bg-[rgba(255,255,255,0.1)] hover:rounded-[25%]"/> */}
 
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M4 6h20 M10 12h14"
-                  // d="M4 6h16M4 12h16M4 18h16"
+             <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M4 5h22 M12 14h14"
+                // d="M4 6h16M4 12h16M4 18h16"
                 />
               </svg>
             )}

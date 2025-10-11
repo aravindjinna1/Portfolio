@@ -226,7 +226,7 @@ function Skills() {
           >
             <h1 className="text-white text-[20px]  mb-4 relative z-40">
               {" "}
-              Other & Tools Technologies
+              Other Tools & Technologies
             </h1>
             <div className="grid grid-cols-3 gap-4 place-items-center w-full mb-2 relative z-40">
               <Icon

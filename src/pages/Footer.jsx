@@ -50,7 +50,7 @@ const Footer = () => {
             className=" rounded-[100%] active:scale-94 bg-white hover:scale-110 cursor-pointer transition-transform ease-in-out duration-300 hover:shadow-[0px_0px_10px_2px_#07f980]"
           />
         </a>
-        <a href="https://instagram.com" target="_blank">
+        <a href="https://www.instagram.com/aravind_jinna1/" target="_blank">
           <Icon
             icon="skill-icons:instagram"
             width="30"

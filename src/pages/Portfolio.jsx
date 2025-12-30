@@ -2,7 +2,7 @@ import "../styles.css";
 import AravImg from "../assets/deskman2.png";
 import React, { Suspense, useRef } from "react";
 import NavBar from "../components/NavBar";
-import Updatesoon from "../assets/updatessoon.jpg";
+// import Updatesoon from "../assets/updatessoon.jpg";
 // import Footer from './Footer'
 // import About from './About'
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
@@ -177,7 +177,7 @@ export default function Portfolio() {
                   <FaWhatsapp />
                 </a>
                 <a
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/aravind_jinna1/"
                   target="_blank"
                   rel="noreferrer"
                   className="hover:text-yellow-300 active:scale-94 hover:scale-110 transition"
@@ -195,7 +195,7 @@ export default function Portfolio() {
                   Hire Me
                 </button>
                 <button className="cursor-pointer active:scale-94 bg-[#07f9f1] text-black px-4 py-2 rounded-lg transition hover:bg-yellow-300 hover:-translate-y-1">
-                  <a href={Updatesoon}>Resume</a>
+                  <a href="https://drive.google.com/file/d/1WNFwz48wsPsBDVOevxCfL-Ls6hvX_9nd/view?usp=sharing">Resume</a>
                 </button>
               </div>
             </motion.div>

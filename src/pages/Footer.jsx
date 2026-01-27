@@ -34,7 +34,7 @@ const Footer = () => {
           />
         </a>
         <a
-          href="https://www.linkedin.com/in/aravind-jinna-48ba2a2a0/"
+          href="https://www.linkedin.com/in/jinna-aravind1/"
           target="_blank"
         >
           <Icon

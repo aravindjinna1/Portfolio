@@ -144,8 +144,8 @@ export default function Portfolio() {
               </h1>
               <p className="text-lg mx-1 md:mx-0  relative z-30">
                 And I'm a{" "}
-                <strong className="text-[#ff00d0] mx-4 md:mx-0">
-                  Front-End Developer
+                <strong className="text-[#07f9f1] mx-4 md:mx-0">
+                  Full-stack Developer
                 </strong>
               </p>
 
@@ -160,7 +160,7 @@ export default function Portfolio() {
                   <FaGithub />
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/aravind-jinna-48ba2a2a0/"
+                  href="https://www.linkedin.com/in/jinna-aravind1/"
                   target="_blank"
                   rel="noreferrer"
                   className="hover:text-yellow-300 active:scale-94 hover:scale-110 transition"
@@ -214,11 +214,11 @@ export default function Portfolio() {
         className="flex justify-around text-lg relative z-20"
       >
         <div className="text-center  md:mt-0 ">
-          <h2 className="text-2xl font-bold">20+</h2>
+          <h2 className="text-2xl font-bold text-[#07f9f1]">20+</h2>
           <p>Projects Completed</p>
         </div>
         <div className="text-center ">
-          <h2 className="text-2xl font-bold">10+</h2>
+          <h2 className="text-2xl font-bold text-[#07f9f1]">10+</h2>
           <p>Technologies Mastered</p>
         </div>
       </motion.section>

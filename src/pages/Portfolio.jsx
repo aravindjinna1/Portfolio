@@ -195,7 +195,8 @@ export default function Portfolio() {
                   Hire Me
                 </button>
                 <button className="cursor-pointer active:scale-94 bg-[#07f9f1] text-black px-4 py-2 rounded-lg transition hover:bg-yellow-300 hover:-translate-y-1">
-                  <a href="https://drive.google.com/file/d/1WNFwz48wsPsBDVOevxCfL-Ls6hvX_9nd/view?usp=sharing">Resume</a>
+                  <a href="https://drive.google.com/file/d/1bK-7PHW_UwJk6GvkdVjKj-UA9Fbk8x7L/view?usp=sharing"  target="_blank"
+                  rel="noopener noreferrer">Resume</a>
                 </button>
               </div>
             </motion.div>
